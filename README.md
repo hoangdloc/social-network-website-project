@@ -1,6 +1,6 @@
-#Social network website Nhanchinher
+#Social network website Socialhub
 
-This is my first project about social network. The purpose is creating a website for Nhan Chinh Student.
+This is my first project about social network. The purpose is creating a website for learning and training.
 
 ## Acknowledgements
 
