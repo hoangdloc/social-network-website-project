@@ -37,5 +37,16 @@
       else
         return false;
     }
+
+    public function isFriend($username_to_check) {
+      $usernameComma = "," . $username_to_check . ",";
+
+      if ((strstr($this -> user['friend_array'], $usernameComma) || $username_to_check == $this -> user['username'])) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
   }
 ?>
