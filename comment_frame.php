@@ -13,7 +13,6 @@
   }
 ?>
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -152,7 +151,7 @@
             <img src="<?php echo $user_obj -> getProfilePic(); ?>" title="<?php echo $posted_by; ?>" style="float:left;" height="30px">
           </a>
           <a href="<?php echo $posted_by; ?>" target="_parent">
-            <p><?php echo $user_obj -> getFirstAndlastName(); ?></p>
+            <span><?php echo $user_obj -> getFirstAndlastName(); ?></span>
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <?php echo $time_message . "<br>" . $comment_body; ?>

@@ -213,8 +213,8 @@ textarea:focus {
 .comment_like {
   background-color: transparent;
   border: none;
-  font-size: 14px;
-  color: #3498db;
+  font-size: 15px;
+  color: #20aae5;
   padding: 0;
   height: auto;
   width: auto;
@@ -223,5 +223,39 @@ textarea:focus {
 
 .like_value {
   display: inline;
-  font-size: 14px;
+  font-size: 15px;
+}
+
+.profile_left {
+  top: -10px;
+  width: 17%;
+  max-width: 240px;
+  min-width: 130px;
+  height: 100%;
+  float: left;
+  position: relative;
+  background-color: #37b0e9;
+  border-right: 10px solid #83d6fe;
+  color: #cbeaf8;
+  margin-right: 20px;
+}
+
+.profile_left img {
+  min-width: 80px;
+  width: 55%;
+  margin: 20px;
+  border: 5px solid #83d6fe;
+  border-radius: 100px;
+}
+
+.profile_info {
+  display: list-item;
+  background-color: #2980b9;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+
+.profile_info p {
+  margin: 0 0 0 20px;
+  word-wrap: break-word;
 }
