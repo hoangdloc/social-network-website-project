@@ -23,6 +23,7 @@
   <!-- Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/socialhub.js"></script>
 
   <!-- CSS -->
   <link href="assets/css/all.css" rel="stylesheet"> <!--load all styles -->

@@ -91,7 +91,7 @@
 
           <form class="profile_post" action="" method="POST">
             <div class="form-group">
-              <textarea class="form-control" name="post_body" placeholder="What do you think right now?"></textarea>
+              <textarea class="form-control" name="post_body" placeholder="What do you think right now ?"></textarea>
               <input type="hidden" name="user_from" value="<?php echo $userLoggedIn; ?>">
               <input type="hidden" name="user_to" value="<?php echo $username; ?>">
             </div>
@@ -101,7 +101,7 @@
 
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Post</button>
+          <button type="button" class="btn btn-primary" name="post_button" id="submit_profile_post">Post</button>
         </div>
       </div>
     </div>
