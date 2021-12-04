@@ -33,11 +33,14 @@ a {
 .logo a {
   font-family: "Bellota-BoldItalic", sans-serif;
   margin-left: 10px;
-  font-size: 30px;
+  font-size: 30;
   position: relative;
   top: 9px;
   text-shadow: #73b6e2 0.5px 0.5px 0px;
   color: #1086ba;
+}
+
+a:hover {
   text-decoration: none;
 }
 
@@ -84,16 +87,16 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.user_details_left_right {
-  width: 125px;
-  display: inline-block;
-  position: absolute;
-}
-
 .user_details img {
-  height: 125px;
+  height: 120px;
   border-radius: 5px;
   margin-right: 5px;
+}
+
+.user_details_left_right {
+  width: 120px;
+  display: inline-table;
+  position: absolute;
 }
 
 .main_column {
@@ -161,7 +164,6 @@ textarea:focus {
   max-height: 250px;
   width: 100%;
   margin-top: 5px;
-  border-radius: 5px;
 }
 
 .comment_section {
@@ -170,7 +172,7 @@ textarea:focus {
 
 .comment_section img {
   margin: 0 3px 3px 3px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 #comment_form textarea {
@@ -180,7 +182,7 @@ textarea:focus {
   border-radius: 5px;
   color: #616060;
   font-size: 14px;
-  margin: 3px 5px 3px 5px;
+  margin: 3px 3px 3px 5px;
 }
 
 #comment_form input[type="submit"] {
@@ -188,23 +190,22 @@ textarea:focus {
   background-color: #20aae5;
   color: #156588;
   border-radius: 5px;
-  width: 12%;
+  width: 13%;
   height: 35px;
-  margin-top: 5px;
+  margin-top: 3px;
   position: absolute;
   font-family: "Bellota-BoldItalic", sans-serif;
-  color: #1e75ca;
   text-shadow: #73b6e2 0.5px 0.5px 0px;
 }
 
-.newsfeedPostOption {
+.newsfeedPostOptions {
   padding: 0px;
   text-decoration: none;
   color: #20aae5;
   border: none;
 }
 
-.newsfeedPostOption iframe {
+.newsfeedPostOptions iframe {
   border: 0px;
   height: 17px;
   width: 120px;
@@ -213,8 +214,8 @@ textarea:focus {
 .comment_like {
   background-color: transparent;
   border: none;
-  font-size: 15px;
-  color: #20aae5;
+  font-size: 14px;
+  color: #3498db;
   padding: 0;
   height: auto;
   width: auto;
@@ -223,7 +224,7 @@ textarea:focus {
 
 .like_value {
   display: inline;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .profile_left {
@@ -300,9 +301,8 @@ textarea:focus {
   margin: 5px;
   border: none;
   color: #fff;
-  background-color: #3498db;
+  background-color: #2ecc71;
 }
-
 #ignore_button {
   width: 20%;
   height: 28px;
@@ -310,5 +310,26 @@ textarea:focus {
   margin: 5px;
   border: none;
   color: #fff;
-  background-color: #bdc3c7;
+  background-color: #e74c3c;
+}
+
+.delete_button {
+  height: 22px;
+  width: 22px;
+  padding: 0;
+  float: right;
+  border-radius: 4px;
+  right: -15px;
+  position: relative;
+}
+
+.profile_main_column {
+  min-width: 675px;
+  float: left;
+  width: 70%;
+  z-index: -1;
+}
+
+.profile_info_bottom {
+  margin: 10px 0 0 7px;
 }

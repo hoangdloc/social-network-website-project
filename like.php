@@ -26,7 +26,7 @@
   $row = mysqli_fetch_array($user_details_query);
   $total_user_likes = $row['num_likes'];
 
-  //Like buttom
+  //Like button
   if (isset($_POST['like_button'])) {
     $total_likes++;
     $query = mysqli_query($con, "UPDATE tblPost SET likes = '$total_likes' WHERE id = '$post_id'");

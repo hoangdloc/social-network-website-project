@@ -16,7 +16,7 @@
         $user_from = $row['user_from'];
         $user_from_obj = new User($con, $user_from);
 
-        echo $user_from_obj -> getFirstAndlastName() . " sent you a friend request!";
+        echo $user_from_obj -> getFirstAndLastName() . " sent you a friend request!";
 
         $user_from_friend_array = $user_from_obj -> getFriendArray();
 

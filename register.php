@@ -37,7 +37,7 @@
     <div class="login_box">
 
       <div class="login_header">
-        <h1>Socialhub</h1>
+        <h1>Welcome to Socialhub</h1>
         Login or sign up below!
       </div>
 
