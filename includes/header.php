@@ -3,6 +3,7 @@ require 'config/config.php';
 include("includes/classes/User.php");
 include("includes/classes/Post.php");
 include("includes/classes/Message.php");
+include("includes/classes/Notification.php");
 
 
 if (isset($_SESSION['username'])) {
@@ -53,14 +54,24 @@ else {
 			//Unread messages
 			$message = new Message($con, $userLoggedIn);
 			$num_messages = $message->getUnreadNumber();
+
+			//Unread notifications
+			$notifications = new Notification($con, $userLoggedIn);
+			$num_notifications = $notifications->getUnreadNumber();
+
+			//Unread friend requests
+			$user_obj = new User($con, $userLoggedIn);
+			$num_requests = $user_obj->getNumberOfFriendRequests();
 		?>
 
 			<a href="<?php echo $userLoggedIn; ?>">
 				<?php echo $user['first_name']; ?>
 			</a>
+			&ensp;
 			<a href="index.php">
         <i class="fas fa-home fa-lg"></i>
       </a>
+			&ensp;
       <a href="javascript:void(0);" onclick="getDropdownData('<?php echo $userLoggedIn; ?>', 'message')">
         <i class="fas fa-envelope fa-lg"></i>
 				<?php
@@ -68,15 +79,27 @@ else {
 					echo '<span class="notification_badge" id="unread_messages">' . $num_messages . '</span>';
 				?>
       </a>
-      <a href="#">
+			&ensp;
+      <a href="javascript:void(0);" onclick="getDropdownData('<?php echo $userLoggedIn; ?>', 'notification')">
         <i class="fas fa-bell fa-lg"></i>
+				<?php
+				if ($num_notifications > 0)
+					echo '<span class="notification_badge" id="unread_notifications">' . $num_notifications . '</span>';
+				?>
       </a>
+			&ensp;
       <a href="requests.php">
         <i class="fas fa-users fa-lg"></i>
+				<?php
+				if ($num_requests > 0)
+					echo '<span class="notification_badge" id="unread_requests">' . $num_requests . '</span>';
+				?>
       </a>
+			&ensp;
       <a href="#">
         <i class="fas fa-cog fa-lg"></i>
       </a>
+			&ensp;
       <a href="includes/handlers/logout.php">
         <i class="fas fa-sign-out-alt fa-lg"></i>
       </a>
@@ -104,7 +127,7 @@ else {
 				var type = $('#dropdown_data_type').val();
 
 				if (type == 'notification')
-					pageName = "ajax_load_notification.php";
+					pageName = "ajax_load_notifications.php";
 				else if(type == 'message')
 					pageName = "ajax_load_messages.php";
 

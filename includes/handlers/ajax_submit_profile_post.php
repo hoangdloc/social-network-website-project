@@ -2,6 +2,7 @@
   require '../../config/config.php';
   include("../classes/User.php");
   include("../classes/Post.php");
+  include("includes/classes/Notification.php");
 
   if (isset($_POST['post_body'])) {
     $post = new Post($con, $_POST['user_from']);
