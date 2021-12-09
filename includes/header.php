@@ -111,7 +111,7 @@ else {
 				?>
       </a>
 			&ensp;
-      <a href="#">
+      <a href="settings.php">
         <i class="fas fa-cog fa-lg"></i>
       </a>
 			&ensp;
