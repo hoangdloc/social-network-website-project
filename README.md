@@ -4,7 +4,7 @@ This is my first project about social network. The purpose is creating a website
 
 ## Acknowledgements
 
-- [Build a Social Network from Scratch: Javascript PHP + MySQL](https://www.udemy.com/course/make-a-social-media-website/)
+- [Build a Social Network from Scratch: Javascript PHP + MySQL](https://www.udemy.com/course/make-a-social-media-website/) by Reece Kenney
 
 ## 🔗 Contacts
 

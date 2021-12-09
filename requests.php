@@ -9,7 +9,7 @@
 
     $query = mysqli_query($con, "SELECT * FROM tblFriendRequest WHERE user_to = '$userLoggedIn'");
     if (mysqli_num_rows($query) == 0)
-      echo "You have no friend requests at this time";
+      echo "You have no friend requests at this time &#128554; ";
     else {
 
       while ($row = mysqli_fetch_array($query)) {
